@@ -1,4 +1,4 @@
-var poles = [[4, 3, 2, 1, 0], [], []];
+var poles = [[], [0], [4, 3, 2, 1];
 var moves = 0;
 var screenWidth = 0;
 
@@ -44,7 +44,10 @@ function renderRings(){
 			var ringLeft = 10-(ringID*(screenWidth/60)+28);
 			var ringStyles = `bottom: ${ringBottom}px; left: ${ringLeft}px; width: ${ringWidth}px;`;
 
-			var ringHtml = `<div class="toh-ring" id="toh-ring-${ringID}" style="${ringStyles}"></div>`;
+			var topRing = '';
+			if(j == poles[i].length-1){topRing = 'toh-top-ring'}
+
+			var ringHtml = `<div class="toh-ring ${topRing}" id="toh-ring-${ringID}" style="${ringStyles}"></div>`;
 			$('#toh-pole-'+i).append(ringHtml);
 		}
 
@@ -85,11 +88,12 @@ function activateMove(pole){
 
 // checks if the puzzle is complete
 function checkComplete(){
-	if(JSON.stringify(poles[2]) == '[4,3,2,1,0]'){
+	if(JSON.stringify(poles[2]) == '[4,3,2,1,0]' && moves < 35){
 		setTimeout(displayCode, 100);
 	}
 }
 
+// display the result code
 function displayCode(){
 	$('#code').fadeIn(1000);
 }
@@ -100,7 +104,7 @@ $(document).ready(function(){
 	renderRings();
 
 	$('#code').hide();
-
+	$('#restart').click(restart);
 
 	$('#toh-pole-0').click(function(){
 		$('#toh-pole-1 .movehere').show();

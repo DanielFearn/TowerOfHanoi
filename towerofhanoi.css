@@ -12,6 +12,36 @@
 	left: 10px;
 	position: absolute;
 	font-family: "Montserrat";
+	font-size: 16px;
+}
+
+#max-moves {
+	width: 100%;
+	text-align: center;
+	top: 10px;
+	left: 0;
+	position: absolute;
+	font-family: "Montserrat";
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+#restart {
+	position: absolute;
+	font-family: sans-serif;
+	color: #00BCD4;
+	height: 20px;
+	width: 80px;
+	font-size: 12px;
+	line-height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid #999;
+	cursor: pointer;
+
 }
 
 .toh-pole {
@@ -44,6 +74,10 @@
 	width: 100px;
 }
 
+.toh-top-ring:hover {
+	background-color: #9C27B0 !important;
+	cursor: pointer;
+}
 
 #toh-ring-0 {
 	background-color: #f44336;
