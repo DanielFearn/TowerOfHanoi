@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	background-color: #e2e1e0;
+}
+
+.container {
+	width: 600px;
+	height: 300px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	margin: 0 auto;
+	margin-top: 50px;
+}
