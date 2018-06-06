@@ -1,8 +1,17 @@
 #toh-cont {
-	width: 600px;
+	width: 100%;
 	height: 300px;
 	background-color: #fff;
 	position: relative;
+}
+
+
+
+#move-counter {
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	font-family: "Montserrat";
 }
 
 .toh-pole {
@@ -54,4 +63,36 @@
 
 #toh-ring-4 {
 	background-color: #00BCD4;
+}
+
+.movehere {
+	position: absolute;
+	font-family: sans-serif;
+	color: #00BCD4;
+	height: 20px;
+	width: 80px;
+	font-size: 12px;
+	line-height: 20px;
+	position: absolute;
+	top: -22px;
+	left: -30px;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid #999;
+	cursor: pointer;
+}
+
+#code {
+	width: 100%;
+	height: calc(100% - 30px);
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: "Montserrat";
+	color: #999;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+	padding-top: 30px;
 }
