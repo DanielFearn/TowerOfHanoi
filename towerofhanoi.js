@@ -1,4 +1,4 @@
-var poles = [[], [0], [4, 3, 2, 1];
+var poles = [[], [1, 0], [4, 3, 2]];
 var moves = 0;
 var screenWidth = 0;
 
